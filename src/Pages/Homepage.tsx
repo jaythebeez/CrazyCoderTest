@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Loader from "../Components/Loader";
 import Searchbar from "../Components/Searchbar";
 import UserList from "../Components/UserList";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
@@ -54,7 +55,7 @@ const Homepage: React.FC = () => {
                 </button>
             )}
             </div>
-            {loading ? <h1>Loading...</h1> : <UserList query={query} />}
+            {loading ? <Loader /> : <UserList query={query} />}
             {error && <h1> Could not fetch data</h1>}
             
         </div>

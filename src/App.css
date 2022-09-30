@@ -1,0 +1,3 @@
+.loader {
+    @apply border-[3px] border-t-[3px] border-t-slate-500 border-solid rounded-[50%] w-[30px] h-[30px] animate-spin 
+}
